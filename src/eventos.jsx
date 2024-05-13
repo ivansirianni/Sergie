@@ -3,7 +3,7 @@ import React from "react"
 import './primerComponente.css'
 
 
-export const Eventos = ({}) => {
+export const Eventos = ({value}) => {
 
     function handleClick() {
         console.log("Este es solo 1 argumento")        
@@ -21,7 +21,7 @@ export const Eventos = ({}) => {
             <button onClick = {handleClick}>
                 Boton con 1 Argumento en el evento
             </button>
-
+                <p>{value}</p>
             <button onClick={(event => handleClick2(event, 'Otro argumento'))}>
                 Boton con + de 1 argumento en e evento
             </button>
